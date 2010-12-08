@@ -1,136 +1,4 @@
-2010-12-07 21:17:07,112 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting TaskTracker
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
-************************************************************/
-2010-12-07 21:17:07,356 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2010-12-07 21:17:07,908 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
-2010-12-07 21:17:07,922 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
-2010-12-07 21:17:07,922 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
-2010-12-07 21:17:07,922 INFO org.mortbay.log: jetty-6.1.14
-2010-12-07 21:17:08,487 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
-2010-12-07 21:17:08,492 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
-2010-12-07 21:17:08,545 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62319
-2010-12-07 21:17:08,587 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
-2010-12-07 21:17:08,587 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62319: starting
-2010-12-07 21:17:08,588 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62319: starting
-2010-12-07 21:17:08,599 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62319: starting
-2010-12-07 21:17:08,599 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62319: starting
-2010-12-07 21:17:08,600 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62319: starting
-2010-12-07 21:17:08,601 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62319
-2010-12-07 21:17:08,601 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62319
-2010-12-07 21:17:08,921 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62319
-2010-12-07 21:17:08,922 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
-2010-12-07 21:17:08,924 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
-2010-12-07 21:17:08,924 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
-2010-12-07 21:17:08,947 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
-2010-12-07 21:20:16,494 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:20:37,443 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting TaskTracker
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:19:33 EST 2010
-************************************************************/
-2010-12-07 21:20:37,647 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2010-12-07 21:20:37,827 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
-2010-12-07 21:20:37,840 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
-2010-12-07 21:20:37,840 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
-2010-12-07 21:20:37,840 INFO org.mortbay.log: jetty-6.1.14
-2010-12-07 21:20:38,351 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
-2010-12-07 21:20:38,357 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
-2010-12-07 21:20:38,375 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62365
-2010-12-07 21:20:38,419 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
-2010-12-07 21:20:38,420 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62365: starting
-2010-12-07 21:20:38,420 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62365: starting
-2010-12-07 21:20:38,431 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62365: starting
-2010-12-07 21:20:38,431 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62365: starting
-2010-12-07 21:20:38,432 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62365: starting
-2010-12-07 21:20:38,432 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62365
-2010-12-07 21:20:38,432 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62365
-2010-12-07 21:20:38,609 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62365
-2010-12-07 21:20:38,610 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
-2010-12-07 21:20:38,612 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
-2010-12-07 21:20:38,612 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
-2010-12-07 21:20:38,613 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
-2010-12-07 21:27:46,426 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:28:09,745 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting TaskTracker
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:27:53 EST 2010
-************************************************************/
-2010-12-07 21:28:09,961 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2010-12-07 21:28:10,162 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
-2010-12-07 21:28:10,176 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
-2010-12-07 21:28:10,176 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
-2010-12-07 21:28:10,176 INFO org.mortbay.log: jetty-6.1.14
-2010-12-07 21:28:10,675 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
-2010-12-07 21:28:10,681 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
-2010-12-07 21:28:10,695 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62483
-2010-12-07 21:28:10,744 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
-2010-12-07 21:28:10,744 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62483: starting
-2010-12-07 21:28:10,745 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62483: starting
-2010-12-07 21:28:10,758 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62483: starting
-2010-12-07 21:28:10,758 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62483: starting
-2010-12-07 21:28:10,758 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62483
-2010-12-07 21:28:10,759 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62483: starting
-2010-12-07 21:28:10,759 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62483
-2010-12-07 21:28:10,827 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62483
-2010-12-07 21:28:10,828 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
-2010-12-07 21:28:10,829 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
-2010-12-07 21:28:10,829 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
-2010-12-07 21:28:10,830 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
-2010-12-07 21:50:19,126 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:50:32,845 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting TaskTracker
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:49:57 EST 2010
-************************************************************/
-2010-12-07 21:50:33,102 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2010-12-07 21:50:33,295 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
-2010-12-07 21:50:33,309 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
-2010-12-07 21:50:33,309 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
-2010-12-07 21:50:33,309 INFO org.mortbay.log: jetty-6.1.14
-2010-12-07 21:50:33,778 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
-2010-12-07 21:50:33,784 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
-2010-12-07 21:50:33,795 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62659
-2010-12-07 21:50:33,840 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
-2010-12-07 21:50:33,840 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62659: starting
-2010-12-07 21:50:33,842 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62659: starting
-2010-12-07 21:50:33,852 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62659: starting
-2010-12-07 21:50:33,852 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62659: starting
-2010-12-07 21:50:33,853 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62659: starting
-2010-12-07 21:50:33,853 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62659
-2010-12-07 21:50:33,853 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62659
-2010-12-07 21:50:34,016 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62659
-2010-12-07 21:50:34,017 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
-2010-12-07 21:50:34,018 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
-2010-12-07 21:50:34,018 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
-2010-12-07 21:50:34,019 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
-2010-12-07 22:04:46,809 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 22:06:45,278 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+2010-12-08 00:14:54,530 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting TaskTracker
 STARTUP_MSG:   host = ganjianwei/192.168.1.146
@@ -138,24 +6,332 @@ STARTUP_MSG:   args = []
 STARTUP_MSG:   version = 0.20.3-dev
 STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 22:04:55 EST 2010
 ************************************************************/
-2010-12-07 22:06:45,476 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
-2010-12-07 22:06:45,649 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
-2010-12-07 22:06:45,662 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
-2010-12-07 22:06:45,662 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
-2010-12-07 22:06:45,662 INFO org.mortbay.log: jetty-6.1.14
-2010-12-07 22:06:46,154 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
-2010-12-07 22:06:46,161 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
-2010-12-07 22:06:46,175 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62962
-2010-12-07 22:06:46,235 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
-2010-12-07 22:06:46,235 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62962: starting
-2010-12-07 22:06:46,236 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62962: starting
-2010-12-07 22:06:46,249 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62962: starting
-2010-12-07 22:06:46,250 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62962: starting
-2010-12-07 22:06:46,250 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62962: starting
-2010-12-07 22:06:46,250 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62962
-2010-12-07 22:06:46,251 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62962
-2010-12-07 22:06:46,341 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62962
-2010-12-07 22:06:46,342 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
-2010-12-07 22:06:46,344 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
-2010-12-07 22:06:46,344 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
-2010-12-07 22:06:46,345 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2010-12-08 00:14:54,770 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2010-12-08 00:14:55,129 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2010-12-08 00:14:55,151 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2010-12-08 00:14:55,151 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2010-12-08 00:14:55,151 INFO org.mortbay.log: jetty-6.1.14
+2010-12-08 00:14:55,691 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2010-12-08 00:14:55,697 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2010-12-08 00:14:55,711 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=64509
+2010-12-08 00:14:55,755 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2010-12-08 00:14:55,755 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 64509: starting
+2010-12-08 00:14:55,756 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 64509: starting
+2010-12-08 00:14:55,765 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 64509: starting
+2010-12-08 00:14:55,765 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 64509: starting
+2010-12-08 00:14:55,765 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 64509: starting
+2010-12-08 00:14:55,765 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:64509
+2010-12-08 00:14:55,765 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:64509
+2010-12-08 00:14:56,010 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:64509
+2010-12-08 00:14:56,012 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2010-12-08 00:14:56,013 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2010-12-08 00:14:56,013 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2010-12-08 00:14:56,027 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2010-12-08 00:17:57,978 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000014_0 task's state:UNASSIGNED
+2010-12-08 00:17:57,981 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000014_0
+2010-12-08 00:17:57,981 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000014_0
+2010-12-08 00:17:58,407 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_2129886252
+2010-12-08 00:17:58,408 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_2129886252 spawned.
+2010-12-08 00:17:59,320 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_2129886252 given task: attempt_201012080014_0001_m_000014_0
+2010-12-08 00:17:59,528 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000014_0 0.0% setup
+2010-12-08 00:17:59,530 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000014_0 is done.
+2010-12-08 00:17:59,530 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000014_0  was 0
+2010-12-08 00:17:59,549 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:17:59,596 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_2129886252 exited. Number of tasks it ran: 1
+2010-12-08 00:18:00,979 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201012080014_0001/attempt_201012080014_0001_m_000014_0/output/file.out in any of the configured local directories
+2010-12-08 00:18:01,050 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000000_0 task's state:UNASSIGNED
+2010-12-08 00:18:01,051 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000001_0 task's state:UNASSIGNED
+2010-12-08 00:18:01,051 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000000_0
+2010-12-08 00:18:01,051 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000000_0
+2010-12-08 00:18:01,051 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201012080014_0001_m_000014_0
+2010-12-08 00:18:01,052 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201012080014_0001_m_000014_0
+2010-12-08 00:18:01,052 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000014_0 done; removing files.
+2010-12-08 00:18:01,053 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201012080014_0001_m_000014_0 not found in cache
+2010-12-08 00:18:01,122 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000001_0
+2010-12-08 00:18:01,122 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201012080014_0001_m_000001_0
+2010-12-08 00:18:01,126 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_-949671387
+2010-12-08 00:18:01,127 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_-949671387 spawned.
+2010-12-08 00:18:01,213 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_-1027093753
+2010-12-08 00:18:01,214 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_-1027093753 spawned.
+2010-12-08 00:18:02,206 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_-949671387 given task: attempt_201012080014_0001_m_000000_0
+2010-12-08 00:18:02,494 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_-1027093753 given task: attempt_201012080014_0001_m_000001_0
+2010-12-08 00:18:11,439 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000001_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/capacity-scheduler.xml:0+3936
+2010-12-08 00:18:11,457 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000001_0 is done.
+2010-12-08 00:18:11,457 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000001_0  was 0
+2010-12-08 00:18:11,458 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2010-12-08 00:18:11,536 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000000_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/hadoop-policy.xml:0+4190
+2010-12-08 00:18:11,537 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000000_0 is done.
+2010-12-08 00:18:11,538 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000000_0  was 0
+2010-12-08 00:18:11,538 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:11,649 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_-1027093753 exited. Number of tasks it ran: 1
+2010-12-08 00:18:11,691 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_-949671387 exited. Number of tasks it ran: 1
+2010-12-08 00:18:14,137 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000002_0 task's state:UNASSIGNED
+2010-12-08 00:18:14,138 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000003_0 task's state:UNASSIGNED
+2010-12-08 00:18:14,138 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_r_000000_0 task's state:UNASSIGNED
+2010-12-08 00:18:14,138 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000002_0
+2010-12-08 00:18:14,138 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000002_0
+2010-12-08 00:18:14,138 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_r_000000_0
+2010-12-08 00:18:14,138 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_r_000000_0
+2010-12-08 00:18:14,238 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_r_2129886252
+2010-12-08 00:18:14,239 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_r_2129886252 spawned.
+2010-12-08 00:18:14,267 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000003_0
+2010-12-08 00:18:14,267 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201012080014_0001_m_000003_0
+2010-12-08 00:18:14,274 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_91191752
+2010-12-08 00:18:14,274 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_91191752 spawned.
+2010-12-08 00:18:14,650 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_-1201724341
+2010-12-08 00:18:14,652 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_-1201724341 spawned.
+2010-12-08 00:18:16,766 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_91191752 given task: attempt_201012080014_0001_m_000002_0
+2010-12-08 00:18:16,767 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_-1201724341 given task: attempt_201012080014_0001_m_000003_0
+2010-12-08 00:18:16,769 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_r_2129886252 given task: attempt_201012080014_0001_r_000000_0
+2010-12-08 00:18:17,549 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000003_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/hadoop-env.sh:0+2230
+2010-12-08 00:18:17,567 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000002_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/log4j.properties:0+2815
+2010-12-08 00:18:17,569 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000003_0 is done.
+2010-12-08 00:18:17,569 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000003_0  was 0
+2010-12-08 00:18:17,569 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000002_0 is done.
+2010-12-08 00:18:17,569 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000002_0  was 0
+2010-12-08 00:18:17,570 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2010-12-08 00:18:17,571 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:17,746 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_-1201724341 exited. Number of tasks it ran: 1
+2010-12-08 00:18:17,849 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_91191752 exited. Number of tasks it ran: 1
+2010-12-08 00:18:20,209 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000004_0 task's state:UNASSIGNED
+2010-12-08 00:18:20,210 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000005_0 task's state:UNASSIGNED
+2010-12-08 00:18:20,210 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000004_0
+2010-12-08 00:18:20,210 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000004_0
+2010-12-08 00:18:20,325 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000005_0
+2010-12-08 00:18:20,326 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201012080014_0001_m_000005_0
+2010-12-08 00:18:20,348 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_390882158
+2010-12-08 00:18:20,348 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_390882158 spawned.
+2010-12-08 00:18:20,430 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_-1158253127
+2010-12-08 00:18:20,430 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_-1158253127 spawned.
+2010-12-08 00:18:21,394 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_390882158 given task: attempt_201012080014_0001_m_000004_0
+2010-12-08 00:18:21,522 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_-1158253127 given task: attempt_201012080014_0001_m_000005_0
+2010-12-08 00:18:22,274 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000005_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/ssl-client.xml.example:0+1243
+2010-12-08 00:18:22,276 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000005_0 is done.
+2010-12-08 00:18:22,276 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000005_0  was 0
+2010-12-08 00:18:22,277 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2010-12-08 00:18:22,371 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000004_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/hadoop-metrics.properties:0+1245
+2010-12-08 00:18:22,373 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000004_0 is done.
+2010-12-08 00:18:22,373 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000004_0  was 0
+2010-12-08 00:18:22,374 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:22,467 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_-1158253127 exited. Number of tasks it ran: 1
+2010-12-08 00:18:22,578 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_390882158 exited. Number of tasks it ran: 1
+2010-12-08 00:18:22,676 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 25 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000000_0 given 25/21
+2010-12-08 00:18:22,676 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64556, bytes: 25, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000000_0
+2010-12-08 00:18:22,730 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000001_0 given 6/2
+2010-12-08 00:18:22,730 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64556, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000001_0
+2010-12-08 00:18:22,754 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000002_0 given 6/2
+2010-12-08 00:18:22,754 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64556, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000002_0
+2010-12-08 00:18:22,758 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000003_0 given 6/2
+2010-12-08 00:18:22,759 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64556, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000003_0
+2010-12-08 00:18:23,160 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 0.10256411% reduce > copy (4 of 13 at 0.00 MB/s) > 
+2010-12-08 00:18:23,290 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000006_0 task's state:UNASSIGNED
+2010-12-08 00:18:23,290 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000007_0 task's state:UNASSIGNED
+2010-12-08 00:18:23,290 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000006_0
+2010-12-08 00:18:23,290 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000006_0
+2010-12-08 00:18:23,348 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000007_0
+2010-12-08 00:18:23,349 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201012080014_0001_m_000007_0
+2010-12-08 00:18:23,372 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_504829713
+2010-12-08 00:18:23,373 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_504829713 spawned.
+2010-12-08 00:18:23,446 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_324692015
+2010-12-08 00:18:23,446 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_324692015 spawned.
+2010-12-08 00:18:24,550 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_324692015 given task: attempt_201012080014_0001_m_000007_0
+2010-12-08 00:18:24,553 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_504829713 given task: attempt_201012080014_0001_m_000006_0
+2010-12-08 00:18:25,174 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000007_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/configuration.xsl:0+535
+2010-12-08 00:18:25,176 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000007_0 is done.
+2010-12-08 00:18:25,176 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000007_0  was 0
+2010-12-08 00:18:25,177 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2010-12-08 00:18:25,180 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000006_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/ssl-server.xml.example:0+1195
+2010-12-08 00:18:25,182 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000006_0 is done.
+2010-12-08 00:18:25,182 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000006_0  was 0
+2010-12-08 00:18:25,182 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:25,314 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_324692015 exited. Number of tasks it ran: 1
+2010-12-08 00:18:25,367 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_504829713 exited. Number of tasks it ran: 1
+2010-12-08 00:18:26,164 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 0.10256411% reduce > copy (4 of 13 at 0.00 MB/s) > 
+2010-12-08 00:18:26,331 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000008_0 task's state:UNASSIGNED
+2010-12-08 00:18:26,331 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000009_0 task's state:UNASSIGNED
+2010-12-08 00:18:26,332 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000008_0
+2010-12-08 00:18:26,332 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000008_0
+2010-12-08 00:18:26,387 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000009_0
+2010-12-08 00:18:26,387 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201012080014_0001_m_000009_0
+2010-12-08 00:18:26,391 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_-1310593817
+2010-12-08 00:18:26,391 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_-1310593817 spawned.
+2010-12-08 00:18:26,462 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_2127177750
+2010-12-08 00:18:26,462 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_2127177750 spawned.
+2010-12-08 00:18:27,263 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_-1310593817 given task: attempt_201012080014_0001_m_000008_0
+2010-12-08 00:18:27,345 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_2127177750 given task: attempt_201012080014_0001_m_000009_0
+2010-12-08 00:18:27,771 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 113 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000004_0 given 113/109
+2010-12-08 00:18:27,772 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64573, bytes: 113, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000004_0
+2010-12-08 00:18:27,793 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000008_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/mapred-site.xml:0+286
+2010-12-08 00:18:27,800 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000008_0 is done.
+2010-12-08 00:18:27,800 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000008_0  was 0
+2010-12-08 00:18:27,801 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000005_0 given 6/2
+2010-12-08 00:18:27,801 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2010-12-08 00:18:27,801 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64573, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000005_0
+2010-12-08 00:18:27,812 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000006_0 given 6/2
+2010-12-08 00:18:27,812 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64573, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000006_0
+2010-12-08 00:18:27,818 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000007_0 given 6/2
+2010-12-08 00:18:27,819 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64573, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000007_0
+2010-12-08 00:18:27,895 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000009_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/core-site.xml:0+178
+2010-12-08 00:18:27,897 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000009_0 is done.
+2010-12-08 00:18:27,897 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000009_0  was 0
+2010-12-08 00:18:27,899 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:27,952 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_-1310593817 exited. Number of tasks it ran: 1
+2010-12-08 00:18:28,033 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_2127177750 exited. Number of tasks it ran: 1
+2010-12-08 00:18:29,365 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000010_0 task's state:UNASSIGNED
+2010-12-08 00:18:29,365 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000011_0 task's state:UNASSIGNED
+2010-12-08 00:18:29,365 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000010_0
+2010-12-08 00:18:29,366 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000010_0
+2010-12-08 00:18:29,469 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000011_0
+2010-12-08 00:18:29,471 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 1 and trying to launch attempt_201012080014_0001_m_000011_0
+2010-12-08 00:18:29,475 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_2045416270
+2010-12-08 00:18:29,476 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_2045416270 spawned.
+2010-12-08 00:18:29,558 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_605797932
+2010-12-08 00:18:29,559 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_605797932 spawned.
+2010-12-08 00:18:30,454 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_2045416270 given task: attempt_201012080014_0001_m_000010_0
+2010-12-08 00:18:30,454 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_605797932 given task: attempt_201012080014_0001_m_000011_0
+2010-12-08 00:18:31,017 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000010_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/hdfs-site.xml:0+178
+2010-12-08 00:18:31,021 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000010_0 is done.
+2010-12-08 00:18:31,021 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000010_0  was 0
+2010-12-08 00:18:31,023 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 1
+2010-12-08 00:18:31,039 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000011_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/masters:0+10
+2010-12-08 00:18:31,040 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000011_0 is done.
+2010-12-08 00:18:31,040 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000011_0  was 0
+2010-12-08 00:18:31,041 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:31,212 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_2045416270 exited. Number of tasks it ran: 1
+2010-12-08 00:18:31,224 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_605797932 exited. Number of tasks it ran: 1
+2010-12-08 00:18:32,171 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 0.20512822% reduce > copy (8 of 13 at 0.00 MB/s) > 
+2010-12-08 00:18:32,399 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000012_0 task's state:UNASSIGNED
+2010-12-08 00:18:32,400 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000012_0
+2010-12-08 00:18:32,400 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000012_0
+2010-12-08 00:18:32,557 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_1512587869
+2010-12-08 00:18:32,558 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_1512587869 spawned.
+2010-12-08 00:18:32,875 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000008_0 given 6/2
+2010-12-08 00:18:32,876 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64582, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000008_0
+2010-12-08 00:18:32,883 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000009_0 given 6/2
+2010-12-08 00:18:32,884 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64582, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000009_0
+2010-12-08 00:18:33,238 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_1512587869 given task: attempt_201012080014_0001_m_000012_0
+2010-12-08 00:18:33,639 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000012_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/input/slaves:0+10
+2010-12-08 00:18:33,641 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000012_0 is done.
+2010-12-08 00:18:33,641 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000012_0  was 0
+2010-12-08 00:18:33,642 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:33,787 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_1512587869 exited. Number of tasks it ran: 1
+2010-12-08 00:18:37,897 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000010_0 given 6/2
+2010-12-08 00:18:37,897 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64587, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000010_0
+2010-12-08 00:18:37,903 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000011_0 given 6/2
+2010-12-08 00:18:37,903 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64588, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000011_0
+2010-12-08 00:18:37,908 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 6 bytes for reduce: 0 from map: attempt_201012080014_0001_m_000012_0 given 6/2
+2010-12-08 00:18:37,909 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64588, bytes: 6, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0001_m_000012_0
+2010-12-08 00:18:38,177 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 0.30769235% reduce > copy (12 of 13 at 0.00 MB/s) > 
+2010-12-08 00:18:38,488 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 0.30769235% reduce > copy (12 of 13 at 0.00 MB/s) > 
+2010-12-08 00:18:38,630 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 0.30769235% reduce > copy (12 of 13 at 0.00 MB/s) > 
+2010-12-08 00:18:39,075 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_r_000000_0 is in commit-pending, task state:COMMIT_PENDING
+2010-12-08 00:18:39,075 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 0.30769235% reduce > copy (12 of 13 at 0.00 MB/s) > 
+2010-12-08 00:18:41,183 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 1.0% reduce > reduce
+2010-12-08 00:18:41,488 INFO org.apache.hadoop.mapred.TaskTracker: Received commit task action for attempt_201012080014_0001_r_000000_0
+2010-12-08 00:18:42,109 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_r_000000_0 1.0% reduce > reduce
+2010-12-08 00:18:42,110 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_r_000000_0 is done.
+2010-12-08 00:18:42,110 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_r_000000_0  was 0
+2010-12-08 00:18:42,111 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:42,274 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_r_2129886252 exited. Number of tasks it ran: 1
+2010-12-08 00:18:44,540 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0001_m_000013_0 task's state:UNASSIGNED
+2010-12-08 00:18:44,540 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0001_m_000013_0
+2010-12-08 00:18:44,541 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201012080014_0001_r_000000_0
+2010-12-08 00:18:44,541 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0001_m_000013_0
+2010-12-08 00:18:44,541 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201012080014_0001_r_000000_0
+2010-12-08 00:18:44,541 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_r_000000_0 done; removing files.
+2010-12-08 00:18:44,579 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0001_m_-666353561
+2010-12-08 00:18:44,580 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0001_m_-666353561 spawned.
+2010-12-08 00:18:45,230 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0001_m_-666353561 given task: attempt_201012080014_0001_m_000013_0
+2010-12-08 00:18:45,443 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000013_0 0.0% 
+2010-12-08 00:18:45,449 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0001_m_000013_0 0.0% cleanup
+2010-12-08 00:18:45,450 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0001_m_000013_0 is done.
+2010-12-08 00:18:45,450 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0001_m_000013_0  was 0
+2010-12-08 00:18:45,451 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:45,589 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0001_m_-666353561 exited. Number of tasks it ran: 1
+2010-12-08 00:18:47,541 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201012080014_0001/attempt_201012080014_0001_m_000013_0/output/file.out in any of the configured local directories
+2010-12-08 00:18:47,586 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201012080014_0001
+2010-12-08 00:18:47,586 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000005_0 done; removing files.
+2010-12-08 00:18:47,589 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000011_0 done; removing files.
+2010-12-08 00:18:47,590 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000001_0 done; removing files.
+2010-12-08 00:18:47,593 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000012_0 done; removing files.
+2010-12-08 00:18:47,594 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000006_0 done; removing files.
+2010-12-08 00:18:47,596 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000000_0 done; removing files.
+2010-12-08 00:18:47,597 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000013_0 done; removing files.
+2010-12-08 00:18:47,598 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201012080014_0001_m_000013_0 not found in cache
+2010-12-08 00:18:47,598 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000007_0 done; removing files.
+2010-12-08 00:18:47,600 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000004_0 done; removing files.
+2010-12-08 00:18:47,601 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000008_0 done; removing files.
+2010-12-08 00:18:47,603 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000009_0 done; removing files.
+2010-12-08 00:18:47,605 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000003_0 done; removing files.
+2010-12-08 00:18:47,606 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000010_0 done; removing files.
+2010-12-08 00:18:47,607 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0001_m_000002_0 done; removing files.
+2010-12-08 00:18:50,615 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0002_m_000002_0 task's state:UNASSIGNED
+2010-12-08 00:18:50,616 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0002_m_000002_0
+2010-12-08 00:18:50,616 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0002_m_000002_0
+2010-12-08 00:18:50,813 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0002_m_341718307
+2010-12-08 00:18:50,813 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0002_m_341718307 spawned.
+2010-12-08 00:18:51,449 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0002_m_341718307 given task: attempt_201012080014_0002_m_000002_0
+2010-12-08 00:18:51,637 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_m_000002_0 0.0% setup
+2010-12-08 00:18:51,638 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0002_m_000002_0 is done.
+2010-12-08 00:18:51,638 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0002_m_000002_0  was 0
+2010-12-08 00:18:51,639 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:51,777 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0002_m_341718307 exited. Number of tasks it ran: 1
+2010-12-08 00:18:53,616 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201012080014_0002/attempt_201012080014_0002_m_000002_0/output/file.out in any of the configured local directories
+2010-12-08 00:18:53,689 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0002_m_000000_0 task's state:UNASSIGNED
+2010-12-08 00:18:53,689 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0002_m_000000_0
+2010-12-08 00:18:53,690 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0002_m_000000_0
+2010-12-08 00:18:53,690 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201012080014_0002_m_000002_0
+2010-12-08 00:18:53,690 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201012080014_0002_m_000002_0
+2010-12-08 00:18:53,690 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0002_m_000002_0 done; removing files.
+2010-12-08 00:18:53,691 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201012080014_0002_m_000002_0 not found in cache
+2010-12-08 00:18:53,746 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0002_m_350297113
+2010-12-08 00:18:53,746 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0002_m_350297113 spawned.
+2010-12-08 00:18:54,374 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0002_m_350297113 given task: attempt_201012080014_0002_m_000000_0
+2010-12-08 00:18:54,832 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_m_000000_0 1.0% file:/Users/ganjianwei/Desktop/CPS216/hadoop_ekg/grep-temp-966372009/part-00000:0+248
+2010-12-08 00:18:54,833 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0002_m_000000_0 is done.
+2010-12-08 00:18:54,833 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0002_m_000000_0  was 0
+2010-12-08 00:18:54,834 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:18:55,008 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0002_m_350297113 exited. Number of tasks it ran: 1
+2010-12-08 00:18:56,750 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0002_r_000000_0 task's state:UNASSIGNED
+2010-12-08 00:18:56,751 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0002_r_000000_0
+2010-12-08 00:18:56,751 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0002_r_000000_0
+2010-12-08 00:18:56,792 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0002_r_-949671387
+2010-12-08 00:18:56,793 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0002_r_-949671387 spawned.
+2010-12-08 00:18:57,429 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0002_r_-949671387 given task: attempt_201012080014_0002_r_000000_0
+2010-12-08 00:19:02,759 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 132 bytes for reduce: 0 from map: attempt_201012080014_0002_m_000000_0 given 132/128
+2010-12-08 00:19:02,760 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 192.168.1.146:50060, dest: 192.168.1.146:64608, bytes: 132, op: MAPRED_SHUFFLE, cliID: attempt_201012080014_0002_m_000000_0
+2010-12-08 00:19:03,608 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_r_000000_0 0.33333334% reduce > copy (1 of 1 at 0.00 MB/s)
+2010-12-08 00:19:03,741 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_r_000000_0 0.33333334% reduce > copy (1 of 1 at 0.00 MB/s)
+2010-12-08 00:19:03,814 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_r_000000_0 0.33333334% reduce > copy (1 of 1 at 0.00 MB/s)
+2010-12-08 00:19:03,945 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0002_r_000000_0 is in commit-pending, task state:COMMIT_PENDING
+2010-12-08 00:19:03,945 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_r_000000_0 0.33333334% reduce > copy (1 of 1 at 0.00 MB/s)
+2010-12-08 00:19:05,910 INFO org.apache.hadoop.mapred.TaskTracker: Received commit task action for attempt_201012080014_0002_r_000000_0
+2010-12-08 00:19:05,966 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_r_000000_0 1.0% reduce > reduce
+2010-12-08 00:19:05,968 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0002_r_000000_0 is done.
+2010-12-08 00:19:05,968 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0002_r_000000_0  was 0
+2010-12-08 00:19:05,969 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:19:06,128 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0002_r_-949671387 exited. Number of tasks it ran: 1
+2010-12-08 00:19:08,964 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201012080014_0002_m_000001_0 task's state:UNASSIGNED
+2010-12-08 00:19:08,965 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201012080014_0002_m_000001_0
+2010-12-08 00:19:08,965 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201012080014_0002_m_000001_0
+2010-12-08 00:19:08,965 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201012080014_0002_r_000000_0
+2010-12-08 00:19:08,965 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201012080014_0002_r_000000_0
+2010-12-08 00:19:08,965 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0002_r_000000_0 done; removing files.
+2010-12-08 00:19:09,031 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201012080014_0002_m_1367886117
+2010-12-08 00:19:09,032 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201012080014_0002_m_1367886117 spawned.
+2010-12-08 00:19:09,714 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201012080014_0002_m_1367886117 given task: attempt_201012080014_0002_m_000001_0
+2010-12-08 00:19:09,894 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_m_000001_0 0.0% 
+2010-12-08 00:19:09,899 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201012080014_0002_m_000001_0 0.0% cleanup
+2010-12-08 00:19:09,900 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201012080014_0002_m_000001_0 is done.
+2010-12-08 00:19:09,900 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201012080014_0002_m_000001_0  was 0
+2010-12-08 00:19:09,901 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2010-12-08 00:19:10,063 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201012080014_0002_m_1367886117 exited. Number of tasks it ran: 1
+2010-12-08 00:19:11,965 INFO org.apache.hadoop.mapred.TaskTracker: org.apache.hadoop.util.DiskChecker$DiskErrorException: Could not find taskTracker/jobcache/job_201012080014_0002/attempt_201012080014_0002_m_000001_0/output/file.out in any of the configured local directories
+2010-12-08 00:19:12,000 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201012080014_0002
+2010-12-08 00:19:12,000 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0002_m_000001_0 done; removing files.
+2010-12-08 00:19:12,001 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201012080014_0002_m_000001_0 not found in cache
+2010-12-08 00:19:12,001 INFO org.apache.hadoop.mapred.TaskRunner: attempt_201012080014_0002_m_000000_0 done; removing files.
+2010-12-08 00:23:58,675 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
+************************************************************/

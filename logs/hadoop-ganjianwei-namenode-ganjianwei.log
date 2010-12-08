@@ -1,130 +1,4 @@
-2010-12-07 21:13:42,334 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting NameNode
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
-************************************************************/
-2010-12-07 21:13:42,450 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
-	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
-
-2010-12-07 21:13:42,451 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down NameNode at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:14:42,071 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting NameNode
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
-************************************************************/
-2010-12-07 21:14:42,149 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
-	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
-
-2010-12-07 21:14:42,150 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down NameNode at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:17:02,824 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting NameNode
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
-************************************************************/
-2010-12-07 21:17:02,916 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
-	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
-
-2010-12-07 21:17:02,918 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down NameNode at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:20:33,162 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting NameNode
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:19:33 EST 2010
-************************************************************/
-2010-12-07 21:20:33,286 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
-	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
-
-2010-12-07 21:20:33,288 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down NameNode at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:28:04,919 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting NameNode
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:27:53 EST 2010
-************************************************************/
-2010-12-07 21:28:05,000 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
-	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
-
-2010-12-07 21:28:05,002 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down NameNode at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 21:50:29,015 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
-/************************************************************
-STARTUP_MSG: Starting NameNode
-STARTUP_MSG:   host = ganjianwei/192.168.1.146
-STARTUP_MSG:   args = []
-STARTUP_MSG:   version = 0.20.3-dev
-STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:49:57 EST 2010
-************************************************************/
-2010-12-07 21:50:29,153 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
-	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
-	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
-
-2010-12-07 21:50:29,154 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
-/************************************************************
-SHUTDOWN_MSG: Shutting down NameNode at ganjianwei/192.168.1.146
-************************************************************/
-2010-12-07 22:06:40,650 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+2010-12-08 00:14:50,959 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
 /************************************************************
 STARTUP_MSG: Starting NameNode
 STARTUP_MSG:   host = ganjianwei/192.168.1.146
@@ -132,7 +6,7 @@ STARTUP_MSG:   args = []
 STARTUP_MSG:   version = 0.20.3-dev
 STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 22:04:55 EST 2010
 ************************************************************/
-2010-12-07 22:06:40,774 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
+2010-12-08 00:14:51,087 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
 	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
@@ -141,7 +15,7 @@ STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 22:04:55 EST
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
 	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
 
-2010-12-07 22:06:40,776 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+2010-12-08 00:14:51,088 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
 /************************************************************
 SHUTDOWN_MSG: Shutting down NameNode at ganjianwei/192.168.1.146
 ************************************************************/

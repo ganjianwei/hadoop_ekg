@@ -77,6 +77,57 @@
     }
   }
 
+
+    public void generateTaskTrackerResourceTable(JspWriter out,
+                                                 String type,
+                                                 JobTracker tracker) 
+    throws IOException {
+        Collection c;
+        if (("blacklisted").equals(type)) {
+          c = tracker.blacklistedTaskTrackers();
+        } else if (("active").equals(type)) {
+          c = tracker.activeTaskTrackers();
+        } else {
+          c = tracker.taskTrackers();
+        }
+        if (c.size() == 0) {
+          out.print("There are currently no known " + type + " Task Trackers.");
+        } else {
+          out.print("<center>\n");
+          out.print("<table border=\"2\" cellpadding=\"5\" cellspacing=\"2\">\n");
+          out.print("<tr><td align=\"center\" colspan=\"6\"><b>Task Trackers</b></td></tr>\n");
+          out.print("<tr><td><b>Name</b></td><td><b>Host</b></td>" +
+                    "<td><b>Running Tasks</b></td>" +
+                    "<td><b>CPU Usage</b></td>" +
+                    "<td><b>Disk I/O</b></td>" +
+                    "<td><b>Memory Usage</b></td>\n");
+          // Name | Host | Running Tasks | CPU Usage | Disk I/O | Memory Usage
+          for (Iterator it = c.iterator(); it.hasNext(); ) {
+            TaskTrackerStatus tt = (TaskTrackerStatus) it.next();
+            StringBuilder tasks = new StringBuilder();
+            for (Iterator it2 = tt.getTaskReports().iterator(); it2.hasNext(); ) {
+                TaskStatus taskStat = (TaskStatus)it2.next();
+                if (tasks.length() > 0) {
+                    tasks.append(", ");
+                }
+                tasks.append(taskStat.getTaskID());
+            }
+            if (tasks.length() == 0) {
+                tasks.append("No tasks running");
+            }
+            out.print("<tr><td><a href=\"http://");
+            out.print(tt.getHost() + ":" + tt.getHttpPort() + "/\">");
+            out.print(tt.getTrackerName() + "</a></td><td>");
+            out.print(tt.getHost() + "</td><td>" + tasks.toString() +
+                      "</td><td>" + "90%" +
+                      "</td><td>" + "100ms" + 
+                      "</td><td>" + "40%" + 
+                      "</td></tr>\n");
+          }
+          out.print("</table>\n");
+          out.print("</center>\n");
+        }
+      }
 %>
 
 <html>
@@ -90,7 +141,20 @@
 <%
   generateTaskTrackerTable(out, type, tracker);
 %>
+<hr>
+
+<h2>Resource Utilization</h2>
+<%
+  generateTaskTrackerResourceTable(out, type, tracker);
+%>
 
 <%
 out.println(ServletUtil.htmlFooter());
 %>
+
+<script type="text/javascript" charset="utf-8">
+    // Auto reload
+    window.onload = function() {
+        setTimeout(function() { window.location.reload(); }, 2000);
+    }
+</script>
