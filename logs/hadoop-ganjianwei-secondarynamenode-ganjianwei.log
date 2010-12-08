@@ -1,0 +1,91 @@
+2010-12-07 21:13:45,427 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
+************************************************************/
+2010-12-07 21:13:45,489 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2010-12-07 21:13:45,552 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:14:44,385 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
+************************************************************/
+2010-12-07 21:14:44,446 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2010-12-07 21:14:44,515 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:17:04,743 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
+************************************************************/
+2010-12-07 21:17:04,803 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2010-12-07 21:17:04,866 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:20:35,131 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:19:33 EST 2010
+************************************************************/
+2010-12-07 21:20:35,196 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2010-12-07 21:20:35,272 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:28:07,336 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:27:53 EST 2010
+************************************************************/
+2010-12-07 21:28:07,396 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2010-12-07 21:28:07,474 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:50:30,520 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:49:57 EST 2010
+************************************************************/
+2010-12-07 21:50:30,640 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2010-12-07 21:50:30,730 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 22:06:42,818 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting SecondaryNameNode
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 22:04:55 EST 2010
+************************************************************/
+2010-12-07 22:06:42,915 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=SecondaryNameNode, sessionId=null
+2010-12-07 22:06:42,982 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at ganjianwei/192.168.1.146
+************************************************************/

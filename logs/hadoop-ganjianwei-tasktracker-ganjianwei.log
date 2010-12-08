@@ -1,0 +1,161 @@
+2010-12-07 21:17:07,112 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:06:23 EST 2010
+************************************************************/
+2010-12-07 21:17:07,356 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2010-12-07 21:17:07,908 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2010-12-07 21:17:07,922 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2010-12-07 21:17:07,922 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2010-12-07 21:17:07,922 INFO org.mortbay.log: jetty-6.1.14
+2010-12-07 21:17:08,487 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2010-12-07 21:17:08,492 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2010-12-07 21:17:08,545 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62319
+2010-12-07 21:17:08,587 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2010-12-07 21:17:08,587 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62319: starting
+2010-12-07 21:17:08,588 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62319: starting
+2010-12-07 21:17:08,599 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62319: starting
+2010-12-07 21:17:08,599 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62319: starting
+2010-12-07 21:17:08,600 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62319: starting
+2010-12-07 21:17:08,601 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62319
+2010-12-07 21:17:08,601 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62319
+2010-12-07 21:17:08,921 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62319
+2010-12-07 21:17:08,922 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2010-12-07 21:17:08,924 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2010-12-07 21:17:08,924 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2010-12-07 21:17:08,947 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2010-12-07 21:20:16,494 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:20:37,443 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:19:33 EST 2010
+************************************************************/
+2010-12-07 21:20:37,647 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2010-12-07 21:20:37,827 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2010-12-07 21:20:37,840 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2010-12-07 21:20:37,840 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2010-12-07 21:20:37,840 INFO org.mortbay.log: jetty-6.1.14
+2010-12-07 21:20:38,351 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2010-12-07 21:20:38,357 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2010-12-07 21:20:38,375 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62365
+2010-12-07 21:20:38,419 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2010-12-07 21:20:38,420 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62365: starting
+2010-12-07 21:20:38,420 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62365: starting
+2010-12-07 21:20:38,431 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62365: starting
+2010-12-07 21:20:38,431 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62365: starting
+2010-12-07 21:20:38,432 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62365: starting
+2010-12-07 21:20:38,432 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62365
+2010-12-07 21:20:38,432 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62365
+2010-12-07 21:20:38,609 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62365
+2010-12-07 21:20:38,610 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2010-12-07 21:20:38,612 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2010-12-07 21:20:38,612 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2010-12-07 21:20:38,613 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2010-12-07 21:27:46,426 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:28:09,745 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:27:53 EST 2010
+************************************************************/
+2010-12-07 21:28:09,961 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2010-12-07 21:28:10,162 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2010-12-07 21:28:10,176 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2010-12-07 21:28:10,176 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2010-12-07 21:28:10,176 INFO org.mortbay.log: jetty-6.1.14
+2010-12-07 21:28:10,675 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2010-12-07 21:28:10,681 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2010-12-07 21:28:10,695 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62483
+2010-12-07 21:28:10,744 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2010-12-07 21:28:10,744 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62483: starting
+2010-12-07 21:28:10,745 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62483: starting
+2010-12-07 21:28:10,758 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62483: starting
+2010-12-07 21:28:10,758 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62483: starting
+2010-12-07 21:28:10,758 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62483
+2010-12-07 21:28:10,759 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62483: starting
+2010-12-07 21:28:10,759 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62483
+2010-12-07 21:28:10,827 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62483
+2010-12-07 21:28:10,828 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2010-12-07 21:28:10,829 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2010-12-07 21:28:10,829 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2010-12-07 21:28:10,830 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2010-12-07 21:50:19,126 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 21:50:32,845 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 21:49:57 EST 2010
+************************************************************/
+2010-12-07 21:50:33,102 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2010-12-07 21:50:33,295 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2010-12-07 21:50:33,309 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2010-12-07 21:50:33,309 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2010-12-07 21:50:33,309 INFO org.mortbay.log: jetty-6.1.14
+2010-12-07 21:50:33,778 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2010-12-07 21:50:33,784 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2010-12-07 21:50:33,795 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62659
+2010-12-07 21:50:33,840 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2010-12-07 21:50:33,840 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62659: starting
+2010-12-07 21:50:33,842 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62659: starting
+2010-12-07 21:50:33,852 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62659: starting
+2010-12-07 21:50:33,852 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62659: starting
+2010-12-07 21:50:33,853 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62659: starting
+2010-12-07 21:50:33,853 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62659
+2010-12-07 21:50:33,853 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62659
+2010-12-07 21:50:34,016 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62659
+2010-12-07 21:50:34,017 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2010-12-07 21:50:34,018 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2010-12-07 21:50:34,018 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2010-12-07 21:50:34,019 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2010-12-07 22:04:46,809 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at ganjianwei/192.168.1.146
+************************************************************/
+2010-12-07 22:06:45,278 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = ganjianwei/192.168.1.146
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.3-dev
+STARTUP_MSG:   build =  -r ; compiled by 'ganjianwei' on Tue Dec  7 22:04:55 EST 2010
+************************************************************/
+2010-12-07 22:06:45,476 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2010-12-07 22:06:45,649 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2010-12-07 22:06:45,662 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2010-12-07 22:06:45,662 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2010-12-07 22:06:45,662 INFO org.mortbay.log: jetty-6.1.14
+2010-12-07 22:06:46,154 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2010-12-07 22:06:46,161 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2010-12-07 22:06:46,175 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=62962
+2010-12-07 22:06:46,235 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2010-12-07 22:06:46,235 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 62962: starting
+2010-12-07 22:06:46,236 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 62962: starting
+2010-12-07 22:06:46,249 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 62962: starting
+2010-12-07 22:06:46,250 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 62962: starting
+2010-12-07 22:06:46,250 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 62962: starting
+2010-12-07 22:06:46,250 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: practivate.adobe.com/127.0.0.1:62962
+2010-12-07 22:06:46,251 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62962
+2010-12-07 22:06:46,341 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_ganjianwei:practivate.adobe.com/127.0.0.1:62962
+2010-12-07 22:06:46,342 INFO org.apache.hadoop.mapred.TaskTracker:  Using MemoryCalculatorPlugin : null
+2010-12-07 22:06:46,344 INFO org.apache.hadoop.mapred.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2010-12-07 22:06:46,344 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2010-12-07 22:06:46,345 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760

@@ -1,0 +1,42 @@
+2010-12-02 16:27:10,662 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = wl-10-180-136-43.wireless.duke.local/10.180.136.43
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2010-12-02 16:27:10,806 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
+
+2010-12-02 16:27:10,808 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at wl-10-180-136-43.wireless.duke.local/10.180.136.43
+************************************************************/
+2010-12-02 17:40:43,496 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = wl-10-180-136-43.wireless.duke.local/10.180.136.43
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.20.2
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.20 -r 911707; compiled by 'chrisdo' on Fri Feb 19 08:07:34 UTC 2010
+************************************************************/
+2010-12-02 17:40:43,587 ERROR org.apache.hadoop.hdfs.server.namenode.NameNode: java.lang.NullPointerException
+	at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:134)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:156)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:160)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:175)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:279)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:956)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:965)
+
+2010-12-02 17:40:43,588 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at wl-10-180-136-43.wireless.duke.local/10.180.136.43
+************************************************************/
