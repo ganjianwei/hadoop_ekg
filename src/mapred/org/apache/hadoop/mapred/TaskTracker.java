@@ -87,6 +87,7 @@ import org.apache.hadoop.util.StringUtils;
 import org.apache.hadoop.util.VersionInfo;
 import org.apache.hadoop.util.DiskChecker.DiskErrorException;
 import org.apache.hadoop.util.Shell.ShellCommandExecutor;
+import org.apache.hadoop.mapred.util.ResourceCalculatorPlugin;
 
 /*******************************************************
  * TaskTracker is a process that starts and tracks MR Tasks
@@ -215,6 +216,7 @@ public class TaskTracker
   private long reduceSlotSizeMemoryOnTT = JobConf.DISABLED_MEMORY_LIMIT;
   private long totalMemoryAllottedForTasks = JobConf.DISABLED_MEMORY_LIMIT;
 
+  private ResourceCalculatorPlugin resourceCalculatorPlugin = null;
   static final String MAPRED_TASKTRACKER_MEMORY_CALCULATOR_PLUGIN_PROPERTY =
       "mapred.tasktracker.memory_calculator_plugin";
 
@@ -510,6 +512,15 @@ public class TaskTracker
     // Clear out temporary files that might be lying around
     DistributedCache.purgeCache(this.fConf);
     cleanupStorage();
+    
+    // Initialize Resource Calculator
+    Class<? extends ResourceCalculatorPlugin> clazz = null;
+       // fConf.getClass(TT_RESOURCE_CALCULATOR_PLUGIN,
+        //    null, ResourceCalculatorPlugin.class);
+    resourceCalculatorPlugin = ResourceCalculatorPlugin
+            .getResourceCalculatorPlugin(clazz, fConf);
+    LOG.info(" Using ResourceCalculatorPlugin : " + resourceCalculatorPlugin);
+   // initializeMemoryManagement();
 
     this.jobClient = (InterTrackerProtocol) 
       RPC.waitForProxy(InterTrackerProtocol.class,
@@ -1199,14 +1210,28 @@ public class TaskTracker
       long freeDiskSpace = getFreeSpace();
       long totVmem = getTotalVirtualMemoryOnTT();
       long totPmem = getTotalPhysicalMemoryOnTT();
+      long availableVmem = getAvailableVirtualMemoryOnTT();
+      long availablePmem = getAvailablePhysicalMemoryOnTT();
+      long cumuCpuTime = getCumulativeCpuTimeOnTT();
+      long cpuFreq = getCpuFrequencyOnTT();
+      int numCpu = getNumProcessorsOnTT();
+      float cpuUsage = getCpuUsageOnTT();
+      float diskIOUsage = getDiskIOUsageOnTT();
+
 
       status.getResourceStatus().setAvailableSpace(freeDiskSpace);
       status.getResourceStatus().setTotalVirtualMemory(totVmem);
       status.getResourceStatus().setTotalPhysicalMemory(totPmem);
-      status.getResourceStatus().setMapSlotMemorySizeOnTT(
-          mapSlotMemorySizeOnTT);
-      status.getResourceStatus().setReduceSlotMemorySizeOnTT(
-          reduceSlotSizeMemoryOnTT);
+      status.getResourceStatus().setMapSlotMemorySizeOnTT(mapSlotMemorySizeOnTT);
+      status.getResourceStatus().setAvailableVirtualMemory(availableVmem);
+      status.getResourceStatus().setAvailablePhysicalMemory(availablePmem);
+      status.getResourceStatus().setCumulativeCpuTime(cumuCpuTime);
+      status.getResourceStatus().setCpuFreq(cpuFreq);
+      status.getResourceStatus().setNumProcessors(numCpu);
+      status.getResourceStatus().setCpuUsage(cpuUsage);
+      status.getResourceStatus().setDiskIOUsage(diskIOUsage);
+
+     
     }
       
     //
@@ -1263,7 +1288,90 @@ public class TaskTracker
   long getTotalVirtualMemoryOnTT() {
     return totalVirtualMemoryOnTT;
   }
+/**
+   * Return the free virtual memory available on this TaskTracker.
+   * @return total size of free virtual memory.
+   */
+  long getAvailableVirtualMemoryOnTT() {
+    long availableVirtualMemoryOnTT = TaskTrackerStatus.UNAVAILABLE;
+    if (resourceCalculatorPlugin != null) {
+      availableVirtualMemoryOnTT =
+              resourceCalculatorPlugin.getAvailableVirtualMemorySize();
+    }
+    return availableVirtualMemoryOnTT;
+  }
 
+  /**
+   * Return the free physical memory available on this TaskTracker.
+   * @return total size of free physical memory in bytes
+   */
+  long getAvailablePhysicalMemoryOnTT() {
+    long availablePhysicalMemoryOnTT = TaskTrackerStatus.UNAVAILABLE;
+    if (resourceCalculatorPlugin != null) {
+      availablePhysicalMemoryOnTT =
+              resourceCalculatorPlugin.getAvailablePhysicalMemorySize();
+    }
+    return availablePhysicalMemoryOnTT;
+  }
+
+  /**
+   * Return the cumulative CPU used time on this TaskTracker since system is on
+   * @return cumulative CPU used time in millisecond
+   */
+  long getCumulativeCpuTimeOnTT() {
+    long cumulativeCpuTime = TaskTrackerStatus.UNAVAILABLE;
+    if (resourceCalculatorPlugin != null) {
+      cumulativeCpuTime = resourceCalculatorPlugin.getCumulativeCpuTime();
+    }
+    return cumulativeCpuTime;
+  }
+
+  /**
+   * Return the number of Processors on this TaskTracker
+   * @return number of processors
+   */
+  int getNumProcessorsOnTT() {
+    int numProcessors = TaskTrackerStatus.UNAVAILABLE;
+    if (resourceCalculatorPlugin != null) {
+      numProcessors = resourceCalculatorPlugin.getNumProcessors();
+    }
+    return numProcessors;
+  }
+
+  /**
+   * Return the CPU frequency of this TaskTracker
+   * @return CPU frequency in kHz
+   */
+  long getCpuFrequencyOnTT() {
+    long cpuFrequency = TaskTrackerStatus.UNAVAILABLE;
+    if (resourceCalculatorPlugin != null) {
+      cpuFrequency = resourceCalculatorPlugin.getCpuFrequency();
+    }
+    return cpuFrequency;
+  }
+
+  /**
+   * Return the CPU usage in % of this TaskTracker
+   * @return CPU usage in %
+   */
+  float getCpuUsageOnTT() {
+    float cpuUsage = TaskTrackerStatus.UNAVAILABLE;
+    if (resourceCalculatorPlugin != null) {
+      cpuUsage = resourceCalculatorPlugin.getCpuUsage();
+    }
+    return cpuUsage;
+  }
+  /**
+   * Return the Disk IO usgage of this TaskTracker
+   * @return Disk IO usage in IO/s
+   */
+      float getDiskIOUsageOnTT(){
+          float diskIOUsage = TaskTrackerStatus.UNAVAILABLE;
+          if(resourceCalculatorPlugin != null){
+              diskIOUsage = resourceCalculatorPlugin.getDiskIOUsage();
+          }
+          return diskIOUsage;
+      }
   /**
    * Return the total physical memory available on this TaskTracker.
    * @return total size of physical memory.
@@ -1275,6 +1383,9 @@ public class TaskTracker
   long getTotalMemoryAllottedForTasksOnTT() {
     return totalMemoryAllottedForTasks;
   }
+  
+
+  
 
   /**
    * Check if the jobtracker directed a 'reset' of the tasktracker.
