@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:ebook="http://www.gutenberg.org/ebooks/" xmlns:marcrel="http://www.loc.gov/loc.terms/relators/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en_US" version="XHTML+RDFa 1.0">
+
+
+<head>
+<base href="http://www.gutenberg.org/ebooks/4300.html" />
+<link rel="stylesheet" type="text/css" href="/css/pg-desktop?1288278222" />
+<script type="text/javascript" src="/js/jquery-1.4.3"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.5.custom"></script>
+<script type="text/javascript" src="/js/pg-desktop?1288281183"></script>
+<script type="text/javascript">//<![CDATA[
+var mobile_url = "http://m.gutenberg.org/ebooks/4300.mobile";
+var canonical_url = "http://www.gutenberg.org/ebooks/4300";
+var locale = "en_US"; /* FIXME: FB accepts only xx_XX */
+//]]></script>
+<link rel="shortcut icon" href="/pics/favicon" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Language" content="en_US" />
+<meta name="description" content="The Project Gutenberg ebook catalog." />
+<meta name="keywords" content="free ebooks, free books, free audio books" />
+<meta name="classification" content="public" />
+<meta property="fb:admins" content="615269807" />
+<meta property="fb:app_id" content="115319388529183" />
+<meta property="og:site_name" content="Project Gutenberg" />
+<meta property="og:image" content="http://www.gutenberg.org/pics/pg-logo" />
+<title>Ulysses by James Joyce - Project Gutenberg</title>
+<script type="text/javascript">//<![CDATA[
+var twitText = "Reading: Ulysses by James Joyce #free #ebooks @gutenberg_org";
+//]]></script>
+<meta name="description" content="Download the free eBook: Ulysses by James Joyce" />
+<link rel="alternate" type="application/xml" href="/ebooks/4300.rdf" />
+<link rel="canonical" href="http://www.gutenberg.org/ebooks/4300" />
+<meta property="og:title" content="Ulysses by James Joyce" />
+<meta property="og:url" content="http://www.gutenberg.org/ebooks/4300" />
+<meta property="og:type" content="book" />
+<meta property="og:description" content="Ulysses by James Joyce" />
+</head>
+<body>
+<div class="menubar">
+<div class="menu-group" id="logo">
+<a class="h1" tabindex="1" href="/wiki/Main_Page" title="Go to Main Page">
+<img class="logo" src="/pics/pg-logo" width="129" height="80" alt=" " />
+Main Page
+</a>
+</div>
+<div class="menu-group" id="go-mobile">
+<a class="h1" tabindex="99" accesskey="m" href="http://m.gutenberg.org/ebooks/4300.mobile" title="Go to the mobile version of this page.">Mobile Version</a>
+</div>
+<div class="menu-group" id="go-start">
+<a class="h1" tabindex="30" accesskey="1" title="Start a new search" href="/ebooks/">Search Start Page</a>
+<span class="menusep">=&gt;</span>
+<a class="h2" tabindex="31" accesskey="o" title="Go to the Offline Catalogs page" href="/wiki/Gutenberg:Offline_Catalogs">Offline Catalogs</a>
+<span class="menusep">-</span>
+<a class="h2" tabindex="34" accesskey="b" title="Go to your bookmark page" href="/catalog/world/mybookmarks">My Bookmarks</a>
+</div>
+<div id="donate" class="menu-group">
+<a tabindex="98" class="h1" title="Get more info about donations to Project Gutenberg" href="/wiki/Gutenberg:Project_Gutenberg_Needs_Your_Donation">Donate to PG</a>
+</div>
+<div id="hosted" class="menu-group">
+</div>
+</div>
+<div class="contents">
+<div class="header">
+<h1 class="icon_title">
+Ulysses by James Joyce
+</h1>
+</div>
+<div class="body">
+<div id="tabs">
+<ul>
+<li><a href="#bibrec">Bibrec</a></li>
+<li><a href="#download">Download</a></li>
+<li id="qrtab"><a href="#qr"><span class="tab">QR Code</span></a></li>
+<li id="twtab"><a href="#tw"><span class="tab">Twitter</span></a></li>
+</ul>
+<div id="bibrec">
+<div typeof="pgterms:ebook" about="[ebook:4300]">
+<h2>Bibliographic Record <span>
+<a href="/wiki/Gutenberg:Help_on_Bibliographic_Record_Page#Table:_Bibliographic_Record" title="Explain Table: Bibliographic Record."><img src="/pics/16/help" class="helpicon" alt="[help]" /></a>
+</span></h2>
+<div property="dcterms:publisher" content="Project Gutenberg"></div>
+<table class="bibrec" summary="Bibliographic data of author and book.">
+<colgroup>
+<col class="narrow" />
+<col />
+</colgroup>
+<tr>
+<th>Author</th>
+<td class="hover">
+<a href="/ebooks/search.html/?default_prefix=author_id&amp;query=1039" rel="marcrel:aut" about="/authors/1039" typeof="pgterms:agent">Joyce, James, 1882-1941</a></td>
+</tr>
+<tr>
+<th>Title</th>
+<td>
+Ulysses
+</td>
+</tr><tr>
+<th>Note</th>
+<td>
+This eBook is based on the pre-1923 print editions.<br />Cf. Wikipedia:<br /><a href="http://en.wikipedia.org/wiki/Ulysses_(novel)">http://en.wikipedia.org/wiki/Ulysses_(novel)</a>
+</td>
+</tr><tr>
+<th>Credits</th>
+<td>
+EBook produced by Col Choat.
+</td>
+</tr>
+<tr property="dcterms:language" datatype="dcterms:RFC4646" content="en">
+<th>Language</th>
+<td>English</td>
+</tr>
+<tr property="dcterms:subject" datatype="dcterms:LCC" content="PR">
+<th>LoC Class</th>
+<td class="hover">
+<a href="/browse/loccs/pr">PR: Language and Literatures: English literature</a>
+</td>
+</tr>
+<tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=1278">
+City and town life -- Fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=2430">
+Psychological fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=2514">
+Domestic fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=2534">
+Married people -- Fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=2614">
+Male friendship -- Fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=3199">
+Dublin (Ireland) -- Fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=3538">
+Epic literature
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=3539">
+Artists -- Fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=3540">
+Jewish men -- Fiction
+</a>
+</td>
+</tr><tr>
+<th>Subject</th>
+<td property="dcterms:subject" datatype="dcterms:LCSH" class="hover">
+<a class="block" href="/ebooks/search.html/?default_prefix=subject_id&amp;query=3541">
+Alienation (Social psychology) -- Fiction
+</a>
+</td>
+</tr>
+<tr>
+<th>Category</th>
+<td property="dcterms:type" datatype="dcterms:DCMIType">Text</td>
+</tr>
+<tr>
+<th>EBook-No.</th>
+<td>4300</td>
+</tr>
+<tr property="dcterms:issued" datatype="xsd:date" content="2003-07-01T00:00:00+00:00">
+<th>Release Date</th>
+<td>Jul 1, 2003</td>
+</tr>
+<tr>
+<th>Copyright Status</th>
+<td property="dcterms:rights">Public domain in the USA.</td>
+</tr>
+<tr>
+<th>Downloads</th>
+<td>11531</td>
+</tr>
+</table>
+</div>
+<div id="more_stuff">
+<h2 class="entry header">Related Books</h2>
+<div class="entry data icon_title">
+<a class="link" rel="nofollow" href="/ebooks/search.html/?default_prefix=also_downloaded&amp;query=4300" type="application/atom+xml" accesskey="2">
+<span class="title">Readers also downloaded…</span>
+</a>
+</div>
+<div class="entry data icon_bookshelf">
+<a class="link" rel="nofollow" href="/ebooks/search.html/?default_prefix=bookshelf_id&amp;query=13" type="application/atom+xml" accesskey="3">
+<span class="title">In Best Books Ever Listings</span>
+</a>
+</div>
+<div class="entry data icon_bookshelf">
+<a class="link" rel="nofollow" href="/ebooks/search.html/?default_prefix=bookshelf_id&amp;query=12" type="application/atom+xml" accesskey="4">
+<span class="title">In Banned Books</span>
+</a>
+</div>
+<div class="entry data icon_bookshelf">
+<a class="link" rel="nofollow" href="/ebooks/search.html/?default_prefix=bookshelf_id&amp;query=33" type="application/atom+xml" accesskey="5">
+<span class="title">In Erotic Fiction</span>
+</a>
+</div>
+</div> <!-- more stuff -->
+</div>
+<div id="download">
+<div id="read_online">
+<div>
+<h2>Read This Book Online</h2>
+<div class="entry icon_title">
+<a class="link" rel="nofollow" href="/catalog/world/readfile?fk_files=1455372">
+<span class="title">Read this ebook online...</span>
+</a>
+</div>
+</div>
+</div>
+<div about="[ebook:4300]" rel="dcterms:hasFormat" rev="dcterms:isFormatOf">
+<h2>Download This eBook</h2>
+<table class="files" summary="Table of available file types and sizes.">
+<caption>Available Formats</caption>
+<colgroup>
+<col />
+<col />
+<col />
+<col />
+</colgroup>
+<tr>
+<th>Format <span>
+<a href="/wiki/Gutenberg:Help_on_Bibliographic_Record_Page#Format" title="Explain Format."><img src="/pics/16/help" class="helpicon" alt="[help]" /></a>
+</span></th>
+<th class="right">Size</th>
+<th>Mirror Sites <span>
+<a href="/wiki/Gutenberg:Help_on_Bibliographic_Record_Page#Mirror_Sites" title="Explain Mirror Sites."><img src="/pics/16/help" class="helpicon" alt="[help]" /></a>
+</span></th>
+</tr>
+<tr class="even" about="http://www.gutenberg.org/files/4300/4300-h/4300-h.htm" typeof="pgterms:file">
+<td property="dcterms:format" content="text/html; charset=iso-8859-1" datatype="dcterms:IMT" class="unpadded icon_save"><a href="http://www.gutenberg.org/files/4300/4300-h/4300-h.htm" type="text/html; charset=iso-8859-1" class="link" title="Download from ibiblio.org.">HTML</a></td>
+<td class="right" property="dcterms:extent" content="1662889">1.6 MB</td>
+<td class="hover">
+<a href="/catalog/world/mirror-redirect?file=4/3/0/4300/4300-h/4300-h.htm" title="Download from mirror site." rel="nofollow">mirror sites</a>
+</td>
+</tr><tr class="even" about="http://www.gutenberg.org/ebooks/4300.epub.noimages" typeof="pgterms:file">
+<td property="dcterms:format" content="application/epub+zip" datatype="dcterms:IMT" class="unpadded icon_save"><a href="http://www.gutenberg.org/ebooks/4300.epub.noimages" type="application/epub+zip" class="link" title="Download from ibiblio.org.">EPUB (no images)</a></td>
+<td class="right" property="dcterms:extent" content="685940">670 kB</td>
+<td class="hover">
+</td>
+</tr><tr class="odd" about="http://www.gutenberg.org/ebooks/4300.mobi.noimages" typeof="pgterms:file">
+<td property="dcterms:format" content="application/x-mobipocket-ebook" datatype="dcterms:IMT" class="unpadded icon_save"><a href="http://www.gutenberg.org/ebooks/4300.mobi.noimages" type="application/x-mobipocket-ebook" class="link" title="Download from ibiblio.org.">Kindle (no images)</a></td>
+<td class="right" property="dcterms:extent" content="1077980">1.0 MB</td>
+<td class="hover">
+</td>
+</tr><tr class="even" about="http://www.gutenberg.org/ebooks/4300.plucker" typeof="pgterms:file">
+<td property="dcterms:format" content="application/prs.plucker" datatype="dcterms:IMT" class="unpadded icon_save"><a href="http://www.gutenberg.org/ebooks/4300.plucker" type="application/prs.plucker" class="link" title="Download from ibiblio.org.">Plucker</a></td>
+<td class="right" property="dcterms:extent" content="975894">953 kB</td>
+<td class="hover">
+</td>
+</tr><tr class="odd" about="http://www.gutenberg.org/ebooks/4300.qioo" typeof="pgterms:file">
+<td property="dcterms:format" content="application/x-qioo-ebook" datatype="dcterms:IMT" class="unpadded icon_save"><a href="http://www.gutenberg.org/ebooks/4300.qioo" type="application/x-qioo-ebook" class="link" title="Download from ibiblio.org.">QiOO Mobile</a></td>
+<td class="right" property="dcterms:extent" content="723954">707 kB</td>
+<td class="hover">
+</td>
+</tr><tr class="even" about="http://www.gutenberg.org/ebooks/4300.txt.utf8" typeof="pgterms:file">
+<td property="dcterms:format" content="text/plain" datatype="dcterms:IMT" class="unpadded icon_save"><a href="http://www.gutenberg.org/ebooks/4300.txt.utf8" type="text/plain" class="link" title="Download from ibiblio.org.">Plain Text UTF-8</a></td>
+<td class="right" property="dcterms:extent" content="1573112">1.5 MB</td>
+<td class="hover">
+</td>
+</tr>
+<tr class="even">
+<td class="unpadded icon_file"><a href="/files/4300/" class="link">More Files…</a></td>
+<td></td>
+<td class="hover">
+<a href="/catalog/world/mirror-redirect?file=4/3/0/4300/" title="Download from mirror site." rel="nofollow">mirror sites</a>
+</td>
+</tr>
+</table>
+</div>
+</div> <!-- download -->
+<div id="qr">
+<h2>QR Code</h2>
+<p>If you scan this code with your mobile phone and appropriate software installed,
+it will open the phone browser to the mobile version of this page.</p>
+<img id="qrcode" src="http://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chl=http%3A%2F%2Fm.gutenberg.org%2Febooks%2F4300.mobile" alt="" title="" />
+<div>
+<a href="http://en.wikipedia.org/wiki/QR_Code">Explain this <img src="/pics/16/help" alt="[help]" /></a>
+</div>
+</div>
+<div id="tw">
+<h2>Twitter (experimental)</h2>
+<div id="tweet-gutenberg_org"></div>
+<p>
+<span id="follow-gutenberg_new"></span> to hear about new ebooks posted at Project Gutenberg.
+</p>
+<p>or</p>
+<p>
+<span id="follow-gutenberg_org"></span> to hear what Project Gutenberg says.
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="ribbon">
+<span class="spacer"></span>
+<a href="http://validator.w3.org/check?uri=referer" rel="nofollow" title="This page contains RDFa metadata."><img src="http://www.w3.org/Icons/valid-xhtml-rdfa-blue" width="88" height="31" alt="Valid XHTML + RDFa" about="" rel="dcterms:conformsTo" resource="http://www.w3.org/TR/rdfa-syntax" /></a>
+<a href="/ebooks/4300.rdf" title="Download RDF/XML Metadata for this ebook."><img src="http://www.w3.org/RDF/icons/rdf_metadata_button.32" width="76" height="32" alt="RDF/XML Metadata" /></a>
+<a href="http://www.ibiblio.org" rel="nofollow" title="Project Gutenberg is hosted by ibiblio"><img src="/pics/ibiblio-hosted-110x32" width="110" height="32" alt="Hosted by ibiblio" /></a>
+<a href="http://www.python.org" rel="nofollow" title="Powered by Python"><img src="/pics/python-powered-w-81x32" width="70" height="28" alt="Powered by Python" /></a>
+<a href="http://www.postgresql.org" rel="nofollow" title="Powered by PostgreSQL"><img src="/pics/postgres-powered-88x31" width="88" height="31" alt="Powered by PostgreSQL" /></a>
+</div>
+<div class="copyright">
+<p>Web site copyright © 2003–2010 Project Gutenberg Literary Archive Foundation — All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

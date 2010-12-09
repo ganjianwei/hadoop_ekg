@@ -2503,7 +2503,7 @@ public class JobTracker implements MRConstants, InterTrackerProtocol,
               " initialContact: " + initialContact + 
               " acceptNewTasks: " + acceptNewTasks + ")" +
               " with responseId: " + responseId);
-
+    LOG.info("CPU Status: " + status.getResourceStatus().getCpuUsage());
     // Make sure heartbeat is from a tasktracker allowed by the jobtracker.
     if (!acceptTaskTracker(status)) {
       throw new DisallowedTaskTrackerException(status);

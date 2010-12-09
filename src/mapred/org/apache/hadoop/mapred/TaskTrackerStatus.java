@@ -317,6 +317,29 @@ class TaskTrackerStatus implements Writable {
             WritableUtils.writeVLong(out, mapSlotMemorySizeOnTT);
             WritableUtils.writeVLong(out, reduceSlotMemorySizeOnTT);
             WritableUtils.writeVLong(out, availableSpace);
+            
+            // Piggyback heartbeat
+            WritableUtils.writeVLong(out, availableVirtualMemory);
+            WritableUtils.writeVLong(out, availablePhysicalMemory);
+            WritableUtils.writeVLong(out, cumulativeCpuTime);
+            WritableUtils.writeVLong(out, cpuFrequency);
+            WritableUtils.writeVInt(out, numProcessors);
+            out.writeFloat(cpuUsage);
+            out.writeFloat(diskIOUsage);
+            
+            // private long totalVirtualMemory ;
+            // private long totalPhysicalMemory;
+            // private long mapSlotMemorySizeOnTT = UNAVAILABLE;
+            // private long reduceSlotMemorySizeOnTT = UNAVAILABLE;
+            // private long availableSpace ;
+            // 
+            // private long availableVirtualMemory = UNAVAILABLE;
+            // private long availablePhysicalMemory = UNAVAILABLE;
+            // private long cumulativeCpuTime = UNAVAILABLE;
+            // private long cpuFrequency = UNAVAILABLE;
+            // private int numProcessors = UNAVAILABLE;
+            // private float cpuUsage = UNAVAILABLE;
+            // private float diskIOUsage = UNAVAILABLE;
         }
 
         public void readFields(DataInput in) throws IOException {
@@ -325,8 +348,18 @@ class TaskTrackerStatus implements Writable {
             mapSlotMemorySizeOnTT = WritableUtils.readVLong(in);
             reduceSlotMemorySizeOnTT = WritableUtils.readVLong(in);
             availableSpace = WritableUtils.readVLong(in);
+            
+            // Piggyback heartbeat
+            availableVirtualMemory = WritableUtils.readVLong(in);
+            availablePhysicalMemory = WritableUtils.readVLong(in);
+            cumulativeCpuTime = WritableUtils.readVLong(in);
+            cpuFrequency = WritableUtils.readVLong(in);
+            numProcessors = WritableUtils.readVInt(in);
+            setCpuUsage(in.readFloat());
+            setDiskIOUsage(in.readFloat());
         }
-    }
+
+}
 
     private ResourceStatus resStatus;
 
