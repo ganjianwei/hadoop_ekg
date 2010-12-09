@@ -88,6 +88,7 @@ import org.apache.hadoop.util.VersionInfo;
 import org.apache.hadoop.util.DiskChecker.DiskErrorException;
 import org.apache.hadoop.util.Shell.ShellCommandExecutor;
 import org.apache.hadoop.mapred.util.ResourceCalculatorPlugin;
+import org.apache.hadoop.mapred.util.LinuxResourceCalculatorExtendedPlugin;
 
 /*******************************************************
  * TaskTracker is a process that starts and tracks MR Tasks
@@ -514,13 +515,13 @@ public class TaskTracker
     cleanupStorage();
     
     // Initialize Resource Calculator
-    Class<? extends ResourceCalculatorPlugin> clazz = null;
-       // fConf.getClass(TT_RESOURCE_CALCULATOR_PLUGIN,
-        //    null, ResourceCalculatorPlugin.class);
-    resourceCalculatorPlugin = ResourceCalculatorPlugin
-            .getResourceCalculatorPlugin(clazz, fConf);
+    //Class<? extends ResourceCalculatorPlugin> clazz = null;
+     //   fConf.getClass(//TT_RESOURCE_CALCULATOR_PLUGIN,
+      //      null, ResourceCalculatorPlugin.class);
+    resourceCalculatorPlugin = new LinuxResourceCalculatorExtendedPlugin();//ResourceCalculatorPlugin
+       //     .getResourceCalculatorPlugin(clazz, fConf);
     LOG.info(" Using ResourceCalculatorPlugin : " + resourceCalculatorPlugin);
-   // initializeMemoryManagement();
+    initializeMemoryManagement();
 
     this.jobClient = (InterTrackerProtocol) 
       RPC.waitForProxy(InterTrackerProtocol.class,
@@ -1226,7 +1227,7 @@ public class TaskTracker
       status.getResourceStatus().setAvailableVirtualMemory(availableVmem);
       status.getResourceStatus().setAvailablePhysicalMemory(availablePmem);
       status.getResourceStatus().setCumulativeCpuTime(cumuCpuTime);
-      status.getResourceStatus().setCpuFreq(cpuFreq);
+      status.getResourceStatus().setCpuFrequency(cpuFreq);
       status.getResourceStatus().setNumProcessors(numCpu);
       status.getResourceStatus().setCpuUsage(cpuUsage);
       status.getResourceStatus().setDiskIOUsage(diskIOUsage);
@@ -1310,6 +1311,7 @@ public class TaskTracker
     if (resourceCalculatorPlugin != null) {
       availablePhysicalMemoryOnTT =
               resourceCalculatorPlugin.getAvailablePhysicalMemorySize();
+      LOG.info("avail pmem: "+availablePhysicalMemoryOnTT);
     }
     return availablePhysicalMemoryOnTT;
   }
@@ -1358,6 +1360,8 @@ public class TaskTracker
     float cpuUsage = TaskTrackerStatus.UNAVAILABLE;
     if (resourceCalculatorPlugin != null) {
       cpuUsage = resourceCalculatorPlugin.getCpuUsage();
+             LOG.info("cpu usage: "+cpuUsage);
+
     }
     return cpuUsage;
   }
@@ -1369,6 +1373,7 @@ public class TaskTracker
           float diskIOUsage = TaskTrackerStatus.UNAVAILABLE;
           if(resourceCalculatorPlugin != null){
               diskIOUsage = resourceCalculatorPlugin.getDiskIOUsage();
+             LOG.info("disk usage: "+diskIOUsage);
           }
           return diskIOUsage;
       }

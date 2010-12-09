@@ -55,18 +55,18 @@ class TaskTrackerStatus implements Writable {
      */
     static class ResourceStatus implements Writable {
 
-        private long totalVirtualMemory;
+        private long totalVirtualMemory ;
         private long totalPhysicalMemory;
-        private long mapSlotMemorySizeOnTT;
-        private long reduceSlotMemorySizeOnTT;
-        private long availableSpace;
-        private long availableVirtualMemory;
-        private long availablePhysicalMemory;
-        private long cumulativeCpuTime;
-        private long cpuFreq;
-        private long numProcessors;
-        private float cpuUsage;
-        private float diskIOUsage;
+        private long mapSlotMemorySizeOnTT = UNAVAILABLE;
+        private long reduceSlotMemorySizeOnTT = UNAVAILABLE;
+        private long availableSpace ;
+        private long availableVirtualMemory = UNAVAILABLE;
+        private long availablePhysicalMemory = UNAVAILABLE;
+        private long cumulativeCpuTime = UNAVAILABLE;
+        private long cpuFrequency = UNAVAILABLE;
+        private int numProcessors = UNAVAILABLE;
+        private float cpuUsage = UNAVAILABLE;
+        private float diskIOUsage = UNAVAILABLE;
 
         ResourceStatus() {
             totalVirtualMemory = JobConf.DISABLED_MEMORY_LIMIT;
@@ -167,46 +167,137 @@ class TaskTrackerStatus implements Writable {
             availableSpace = availSpace;
         }
 
-        void setAvailableVirtualMemory(long availVmem){
-            availableVirtualMemory = availVmem;
+           /**
+     * Set the amount of available virtual memory on the tasktracker.
+     * If the input is not a valid number, it will be set to UNAVAILABLE
+     *
+     * @param vmem amount of available virtual memory on the tasktracker
+     *                    in bytes.
+     */
+    void setAvailableVirtualMemory(long availableMem) {
+      availableVirtualMemory = availableMem > 0 ?
+                               availableMem : UNAVAILABLE;
+    }
+
+    /**
+     * Get the amount of available virtual memory on the tasktracker.
+     * Will return UNAVAILABLE if it cannot be obtained
+     *
+     * @return the amount of available virtual memory on the tasktracker
+     *             in bytes.
+     */
+    long getAvailabelVirtualMemory() {
+      return availableVirtualMemory;
+    }
+
+    /**
+     * Set the amount of available physical memory on the tasktracker.
+     * If the input is not a valid number, it will be set to UNAVAILABLE
+     *
+     * @param availableRAM amount of available physical memory on the
+     *                     tasktracker in bytes.
+     */
+    void setAvailablePhysicalMemory(long availableRAM) {
+      availablePhysicalMemory = availableRAM > 0 ?
+                                availableRAM : UNAVAILABLE;
+    }
+
+    /**
+     * Get the amount of available physical memory on the tasktracker.
+     * Will return UNAVAILABLE if it cannot be obtained
+     *
+     * @return amount of available physical memory on the tasktracker in bytes.
+     */
+    long getAvailablePhysicalMemory() {
+      return availablePhysicalMemory;
+    }
+      
+        /**
+     * Set the CPU frequency of this TaskTracker
+     * If the input is not a valid number, it will be set to UNAVAILABLE
+     *
+     * @param cpuFrequency CPU frequency in kHz
+     */
+    public void setCpuFrequency(long cpuFrequency) {
+      this.cpuFrequency = cpuFrequency > 0 ?
+                          cpuFrequency : UNAVAILABLE;
+    }
+
+      /**
+     * Get the CPU frequency of this TaskTracker
+     * Will return UNAVAILABLE if it cannot be obtained
+     *
+     * @return CPU frequency in kHz
+     */
+    public long getCpuFrequency() {
+      return cpuFrequency;
+    }
+
+    /**
+     * Set the number of processors on this TaskTracker
+     * If the input is not a valid number, it will be set to UNAVAILABLE
+     *
+     * @param numProcessors number of processors
+     */
+    public void setNumProcessors(int numProcessors) {
+      this.numProcessors = numProcessors > 0 ?
+                           numProcessors : UNAVAILABLE;
+    }
+
+    /**
+     * Get the number of processors on this TaskTracker
+     * Will return UNAVAILABLE if it cannot be obtained
+     *
+     * @return number of processors
+     */
+    public int getNumProcessors() {
+      return numProcessors;
+    }
+
+    /**
+     * Set the cumulative CPU time on this TaskTracker since it is up
+     * It can be set to UNAVAILABLE if it is currently unavailable.
+     *
+     * @param cumulativeCpuTime Used CPU time in millisecond
+     */
+    public void setCumulativeCpuTime(long cumulativeCpuTime) {
+      this.cumulativeCpuTime = cumulativeCpuTime > 0 ?
+                               cumulativeCpuTime : UNAVAILABLE;
+    }
+
+    /**
+     * Get the cumulative CPU time on this TaskTracker since it is up
+     * Will return UNAVAILABLE if it cannot be obtained
+     *
+     * @return used CPU time in milliseconds
+     */
+    public long getCumulativeCpuTime() {
+      return cumulativeCpuTime;
+    }
+    
+    /**
+     * Set the CPU usage on this TaskTracker
+     * 
+     * @param cpuUsage CPU usage in %
+     */
+    public void setCpuUsage(float cpuUsage) {
+      this.cpuUsage = cpuUsage;
+    }
+
+    /**
+     * Get the CPU usage on this TaskTracker
+     * Will return UNAVAILABLE if it cannot be obtained
+     *
+     * @return CPU usage in %
+     */
+    public float getCpuUsage() {
+      return cpuUsage;
+    } 
+       
+        public void setDiskIOUsage(float diskIOUsage){
+            this.diskIOUsage = diskIOUsage;
         }
-        long getAvailableVirtualMemory(){
-            return availableVirtualMemory;
-        }
-        void setAvailablePhysicalMemory(long availPmem){
-            availablePhysicalMemory = availPmem;
-        }
-        long getAvailablePhysicalMemory(){
-            return availablePhysicalMemory;
-        }
-        void setCumulativeCpuTime(long cumuCpuTime){
-            cumulativeCpuTime = cumuCpuTime;
-        }
-        long getCumulativeCpuTime(){
-            return cumulativeCpuTime;
-        }
-        void setCpuFreq(long cpufreq){
-            cpuFreq = cpufreq;
-        }
-        long getCpuFreq(){
-           return cpuFreq;
-        }
-        void setNumProcessors(long numCpu){
-           numProcessors = numCpu;
-        }
-        long getNumProcessors(){
-           return numProcessors;
-        }
-        void setCpuUsage(float cpuUsg){
-            cpuUsage =cpuUsg;
-        }
-        float getCpuUsage(){
-            return cpuUsage;
-        }
-        void setDiskIOUsage(float diskIO){
-            diskIOUsage = diskIO;
-        }
-        float getDiskIOUsage(){
+        public float getDiskIOUsage(){
             return diskIOUsage;
         }
 
