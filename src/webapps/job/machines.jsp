@@ -115,13 +115,17 @@
             if (tasks.length() == 0) {
                 tasks.append("No tasks running");
             }
+            double freePhysicalMemoryPercent = tt.getResourceStatus().getAvailablePhysicalMemory() * 1.0 / 
+                tt.getResourceStatus().getTotalPhysicalMemory();
+            double physicalMemoryUsage = 1.0 - freePhysicalMemoryPercent;
+            // Should add formatter
             out.print("<tr><td><a href=\"http://");
             out.print(tt.getHost() + ":" + tt.getHttpPort() + "/\">");
             out.print(tt.getTrackerName() + "</a></td><td>");
             out.print(tt.getHost() + "</td><td>" + tasks.toString() +
-                      "</td><td>" + "90%" +
-                      "</td><td>" + "100ms" + 
-                      "</td><td>" + "40%" + 
+                      "</td><td>" + tt.getResourceStatus().getCpuUsage() +
+                      "</td><td>" + tt.getResourceStatus().getDiskIOUsage() + 
+                      "</td><td>" + physicalMemoryUsage + 
                       "</td></tr>\n");
           }
           out.print("</table>\n");
